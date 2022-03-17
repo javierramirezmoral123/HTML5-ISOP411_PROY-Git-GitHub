@@ -1,0 +1,765 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+	       <title>Práctica 16(1)</title>
+        <meta charset="utf-8">
+	
+    </head>
+<body style="background-image:url('Práctica 16(1)/polygonal-yellow-background_1048-977.jpg'); color:white; background-size:100%;background-attachment:fixed;">
+<center>
+<h1 style="color:blue;">APRENDIENDO A USAR LAS TABLAS </h1>
+<p style="color:blue;"> Vamos a centrar con center las tablas aunque no los enunciados </p>
+</center>
+
+<p style="color:blue;"><img src="Práctica 16(1)/GIF011.gif" height="30" >1. Lo primero es hacer una tabala que no tenga título, ni tampoco cabeceras, ni borde alguno.</p>
+
+<center>
+<table style="color:blue;">
+<tr> <td>fila1-columna1</td> <td>fila1-columna2</td> <td>fila1-columna3</td> </tr>
+<tr> <td>fila2-columna1</td> <td>fila2-columna2</td> <td>fila2-columna3</td>  </tr>
+<tr> <td>fila3-columna1</td> <td>fila3-columna2</td> <td>fila3-columna3</td>  </tr>
+</table>
+</center>
+
+<p style="color:blue;"><img src="Práctica 16(1)/GIF011.gif" height="30" >2. Ahora viene la misma tabla anterior con borde 1 pero solo para la tabla.</p>
+
+<center>
+<table style="color:blue;border:1px solid">
+<tr> <td>fila1-columna1</td> <td>fila1-columna2</td> <td>fila1-columna3</td> </tr>
+<tr> <td>fila2-columna1</td> <td>fila2-columna2</td> <td>fila2-columna3</td>  </tr>
+<tr> <td>fila3-columna1</td> <td>fila3-columna2</td> <td>fila3-columna3</td>  </tr>
+</table>
+</center>
+
+<p style="color:blue;"><img src="Práctica 16(1)/GIF011.gif" height="30" >3. La misma tabla pero con borde 1 para la tabla y para las celdas con CSS inline</p>
+
+<center>
+<table style="color:blue;border:1px solid">
+<tr> <td style="border:1px solid">fila1-columna1</td> <td style="border:1px solid">fila1-columna2</td> <td style="border:1px solid">fila1-columna3</td> </tr>
+<tr> <td style="border:1px solid">fila2-columna1</td> <td style="border:1px solid">fila2-columna2</td> <td style="border:1px solid">fila2-columna3</td>  </tr>
+<tr> <td style="border:1px solid">fila3-columna1</td> <td style="border:1px solid">fila3-columna2</td> <td style="border:1px solid">fila3-columna3</td>  </tr>
+</table>
+</center>
+
+<p style="color:blue;"><img src="Práctica 16(1)/GIF011.gif" height="30" >4. Tabala con título que la acompañará y borde de 1 px pero con la segunda fila desigual. Ya que se pone con el atributo border y no CSS.</p>
+
+<center>
+<table style="color:blue;" border="1">
+<caption>Filas Desiguales</caption>
+<tr> 
+<td>f1-c1</td><td>f1-c2</td><td>f1-c3</td>
+</tr>
+<tr> <td>f2-c1</td> <td>f2-c2</td> </tr>
+<tr> <td >f3-c1</td> <td>f2-c2</td>   
+</tr>
+</table>
+</center>
+
+
+<p style="color:blue;"><img src="Práctica 16(1)/GIF011.gif" height="30" >5. Tabla con título en negrita y Borde 3 con atributo pero la primera fila con cldas vacías</p>
+<center>
+<table style="color:blue;" border="3">
+<caption><strong>celdas vacías</strong></caption>
+<tr> 
+<td>f1-c1</td><td></td><td>f1-c3</td>
+</tr>
+<tr> <td>f2-c1</td> <td>f2-c2</td> <td>f2-c3</td>  
+</tr>
+</table>
+</center>
+
+
+<p style="color:blue;"><img src="Práctica 16(1)/GIF011.gif" height="30" >6. tabla alineada en el centro con atributo con borde 5, titulo con encabezado de medida h1,celdas de encabezdo en columnas y una imagen en una celda a tamaño original. </p>
+
+<table style="color:blue;" border="5" align="center">
+<caption><h1>TABLA</h1></caption>
+<tr>
+<th>Columna1</th><th>Everest</th><th>Columna3</th>
+</tr>
+<tr> 
+<td>f1-c1</td><td>f1-c2</td><td>f1-c3</td>
+</tr>
+<tr> <td>f2-c1</td> <td><img src="Práctica 16(1)/Everest.jpg"></td> <td>f2-c3</td>  
+</tr>
+</table>
+
+
+
+<p style="color:blue;"><img src="Práctica 16(1)/GIF011.gif" height="30" >7.Tabla anterior a la izquierda y la imagen en una celda de anchura 163 px con CSS y altura 158 px con CSS </p>
+<table style="color:blue;" border="5">
+<caption><h1>TABLA</h1></caption>
+<tr>
+<th>Columna1</th><th>Everest</th><th>Columna3</th>
+</tr>
+<tr> 
+<td>f1-c1</td><td>f1-c2</td><td>f1-c3</td>
+</tr>
+<tr> <td>f2-c1</td> <td><img src="Práctica 16(1)/Everest.jpg" style="height:158px; width:163px;"></td> <td>f2-c3</td>  
+</tr>
+</table>
+
+
+<p style="color:blue;"><img src="Práctica 16(1)/GIF011.gif" height="30" >8. Tabla igual que la anterior pero además cerrada con CSS y con unas celdas de encabezado al pie en cada columna</p>
+<table style="color:blue;margin:auto;" border="5">
+<caption><h1>TABLA</h1></caption>
+<tr>
+<th>Columna1</th><th>Monte Everest</th><th>Columna3</th>
+</tr>
+<tr> 
+<td>f1-c1</td><td>f1-c2</td><td>f1-c3</td>
+</tr>
+<tr> <td>f2-c1</td> <td><img src="Práctica 16(1)/Everest.jpg"  style="height:158px; width:163px;"></td> <td>f2-c3</td>  
+</tr>
+<tr>
+<th>Pie 1</th><th>Cumbre a 8000 metros</th><th>Pie 3</th>
+</tr>
+</table>
+
+<p style="color:blue;"><img src="Práctica 16(1)/GIF011.gif" height="30" >9. Tabla centrada con borde 4, titulo de tabla h1 colocado abajo,alineada la derecha y con color rojo,imagen en un celda de 170x170 que es hipervinculo a la pagina 9 con borde de 3 px, y se bare en nueva ventana.</p>
+<table style="color:blue;margin:auto;" border="4">
+<caption style="caption-side:bottom;color:red;"><h1>Abajo y derecha</h1></caption>
+<tr>
+<th>Columna1</th><th>Columna3</th><th>Columna3</th>
+</tr>
+<tr> 
+<td>f1-c1</td><td>f1-c2</td><td>f1-c3</td>
+</tr>
+<tr> <td>f2-c1</td> <td>f2-c2</td> <td><img src="Práctica 16(1)/Leon.jpg"  style="height:170px; width:170px;" href="file:///d:/Users/asir1-19/Desktop/HTML%20de%20Javier/Pr%C3%A1ctica%209/Pr%C3%A1ctica%209.html"></td>  
+</tr>
+</table>
+
+<p style="color:blue;"><img src="Práctica 16(1)/GIF011.gif" height="30" >10. Tabala que es una barra de exploración sencilla y de poco consumo (las celdas son texto que actúan de hipervinculo), alineada en la ventana visible del explorador al centro. con borde de tabla, sin borde de celdas, color de fondo par todas las celdas blanco</p>
+
+<p style="color:blue;"><img src="Práctica 16(1)/GIF011.gif" height="30" >11. También se va a representar en otra tabla más abajo cada enlace en un inframe distinto que esta a su vez en una tabla de borde 5 px con color de borde rojo y de color de fondo amarillo en hexadecimal.  </p>
+
+<center>
+<table style="color:blue;background-color:white;border: solid 1px">
+<tr style="color:blue;"><td><a href="file:///d:/Users/asir1-19/Desktop/HTML%20de%20Javier/Pr%C3%A1ctica%201/Pr%C3%A1ctica1.html" target="i1"> Página 1</a></td>
+<td><a href="" target="i2">Página 2</a></td><td>
+<a href="" target="i3">Página 3</a></td>
+<td><a href="" target="i4">Página 4</a></td>
+<td><a href="" target="i5">Página 5</a></td>
+<td><a href="" target="i6">Página 6</a></td>
+<td><a href="" target="i7">Página 7</a></td>
+<td>Página 8</td>
+<td>Página 9</td>
+<td>Página 10</td >
+<td>Página 11</td>
+<td>Página 12</td>
+<td>Página 13</td>
+<td>Página 15</td>
+</tr>
+</table>
+</center>
+
+<center>
+<table border="5" style="background-color:yellow;">
+<tr style="border:solid 1px; color:red;">
+<td style="border:1px solid">1.HTML significa lenguaje de marcado para hipertextos es el elemento de construcción mas basico de una página web y se usa para crear y representar visualmente una página web.</td>
+<td style="border:1px solid"><a href="file:///d:/Users/asir1-19/Desktop/HTML%20de%20Javier/Pr%C3%A1ctica%202/Pr%C3%A1ctica2.html" target="_i2"></a><iframe src="file:///d:/Users/asir1-19/Desktop/HTML%20de%20Javier/Pr%C3%A1ctica%202/Pr%C3%A1ctica2.html" name="i2"></td>
+<td style="border:1px solid"><a href="file:///d:/Users/asir1-19/Desktop/HTML%20de%20Javier/Pr%C3%A1ctica%203/Pr%C3%A1ctica%203(1)/Pr%C3%A1ctica3(1)%20-%20copia.html" target="_i3"></a><iframe src="file:///d:/Users/asir1-19/Desktop/HTML%20de%20Javier/Pr%C3%A1ctica%203/Pr%C3%A1ctica%203(1)/Pr%C3%A1ctica3(1)%20-%20copia.html" name="i3"></td>
+<td style="border:1px solid"><a href="file:///d:/Users/asir1-19/Desktop/HTML%20de%20Javier/Pr%C3%A1ctica%2013/Pr%C3%A1ctica13_1.html" target="_pr"></a><iframe src="file:///d:/Users/asir1-19/Desktop/HTML%20de%20Javier/Pr%C3%A1ctica%2013/Pr%C3%A1ctica13_1.html" name="pr"></td>
+</tr>
+<tr style="border:solid 1px">
+<td style="border:1px solid"><a href="file:///d:/Users/asir1-19/Desktop/HTML%20de%20Javier/Pr%C3%A1ctica%2013/Pr%C3%A1ctica13_1.html" target="_pr"></a><iframe src="file:///d:/Users/asir1-19/Desktop/HTML%20de%20Javier/Pr%C3%A1ctica%2013/Pr%C3%A1ctica13_1.html" name="pr"></td
+><td style="border:1px solid"><a href="file:///d:/Users/asir1-19/Desktop/HTML%20de%20Javier/Pr%C3%A1ctica%2013/Pr%C3%A1ctica13_1.html" target="_pr"></a><iframe src="file:///d:/Users/asir1-19/Desktop/HTML%20de%20Javier/Pr%C3%A1ctica%2013/Pr%C3%A1ctica13_1.html" name="pr"></td>
+<td style="border:1px solid"><a href="file:///d:/Users/asir1-19/Desktop/HTML%20de%20Javier/Pr%C3%A1ctica%2013/Pr%C3%A1ctica13_1.html" target="_pr"></a><iframe src="file:///d:/Users/asir1-19/Desktop/HTML%20de%20Javier/Pr%C3%A1ctica%2013/Pr%C3%A1ctica13_1.html" name="pr"></td>
+<td style="border:1px solid"><a href="file:///d:/Users/asir1-19/Desktop/HTML%20de%20Javier/Pr%C3%A1ctica%2013/Pr%C3%A1ctica13_1.html" target="_pr"></a><iframe src="file:///d:/Users/asir1-19/Desktop/HTML%20de%20Javier/Pr%C3%A1ctica%2013/Pr%C3%A1ctica13_1.html" name="pr"></td>
+</tr>
+<tr style="border:solid 1px">
+<td style="border:1px solid"><a href="file:///d:/Users/asir1-19/Desktop/HTML%20de%20Javier/Pr%C3%A1ctica%2013/Pr%C3%A1ctica13_1.html" target="_pr"></a><iframe src="file:///d:/Users/asir1-19/Desktop/HTML%20de%20Javier/Pr%C3%A1ctica%2013/Pr%C3%A1ctica13_1.html" name="pr"></td>
+<td style="border:1px solid"><a href="file:///d:/Users/asir1-19/Desktop/HTML%20de%20Javier/Pr%C3%A1ctica%2013/Pr%C3%A1ctica13_1.html" target="_pr"></a><iframe src="file:///d:/Users/asir1-19/Desktop/HTML%20de%20Javier/Pr%C3%A1ctica%2013/Pr%C3%A1ctica13_1.html" name="pr"></td>
+<td style="border:1px solid"><a href="file:///d:/Users/asir1-19/Desktop/HTML%20de%20Javier/Pr%C3%A1ctica%2013/Pr%C3%A1ctica13_1.html" target="_pr"></a><iframe src="file:///d:/Users/asir1-19/Desktop/HTML%20de%20Javier/Pr%C3%A1ctica%2013/Pr%C3%A1ctica13_1.html" name="pr"></td>
+<td style="border:1px solid"><a href="file:///d:/Users/asir1-19/Desktop/HTML%20de%20Javier/Pr%C3%A1ctica%2013/Pr%C3%A1ctica13_1.html" target="_pr"></a><iframe src="file:///d:/Users/asir1-19/Desktop/HTML%20de%20Javier/Pr%C3%A1ctica%2013/Pr%C3%A1ctica13_1.html" name="pr"></td>
+</tr>
+<tr>
+<td style="border:solid 1px"><a href="file:///d:/Users/asir1-19/Desktop/HTML%20de%20Javier/Pr%C3%A1ctica%2013/Pr%C3%A1ctica13_1.html" target="_pr"></a><iframe src="file:///d:/Users/asir1-19/Desktop/HTML%20de%20Javier/Pr%C3%A1ctica%2013/Pr%C3%A1ctica13_1.html" name="pr"></iframe></td>
+<td style="border:1px solid"></td>
+</tr>
+</table>
+</center>
+
+<p style="color:blue;">13.</p>
+<table border="5px;" style="border-color:green; margin:auto; width:10px; background-image:url('Práctica 16(1)/Antelope Canyo2.JPG')">
+<tr>
+<td style="text-align:left;vertical-align:top;color:red;">Alineación izquierda y arriba de las celdas</td>
+<td> <img src="Práctica 16(1)/escalada1.jpg"></td>
+<td style="white-space:nowrap; color:yellow;">Alineación Centrada y Enmedio</td>
+<td style="text-align:right;vertical-align:bottom;color:white;">Alineación derecha y abajo de las celdas</td>
+<tr>
+</table>
+
+<p style="color:blue;">14.</p>
+<table border="1px;" style="background-color:silver;">
+<tr>
+<td><img src="Práctica 16(1)/apply_f2.png"></td>
+<td>NURIA</td>
+</tr>
+<tr>
+<td> <img src="Práctica 16(1)/apply_f2.png"></td>
+<td>DAVID</td>
+</tr><tr>
+<td> <img src="Práctica 16(1)/apply_f2.png"></td>
+<td>IRENE</td>
+</tr>
+</table>
+
+
+<p style="color:blue;">Sin borde</p>
+<table>
+<tr style="background-color:silver;">
+<td><img src="Práctica 16(1)/apply_f2.png"></td>
+<td style="color:blue;">NURIA</td>
+</tr>
+<tr>
+<td> <img src="Práctica 16(1)/apply_f2.png"></td>
+<td style="color:blue;">DAVID</td>
+</tr><tr>
+<td> <img src="Práctica 16(1)/apply_f2.png"></td>
+<td style="color:blue;">IRENE</td>
+</tr>
+</table>
+
+<p style="color:blue;">15.</p>
+<table border="1px;" style="background-color:white;">
+<tr>
+<td><img src="Práctica 16(1)/apply_f2.png"></td>
+<td style="color:blue;">NURIA</td>
+</tr>
+
+<tr>
+
+<tr>
+<td style="white-space:nowrap;" ></td>
+<td> <img src="Práctica 16(1)/apply_f2.png"></td>
+<td style="color:blue;">ROSA</td>
+</tr>
+
+<tr>
+<td style="white-space:nowrap;" ></td>
+<td> <img src="Práctica 16(1)/apply_f2.png"></td>
+<td style="color:blue;">DIEGO</td>
+</tr>
+<tr>
+<td style="white-space:nowrap;" ></td>
+<td> <img src="Práctica 16(1)/apply_f2.png"></td>
+<td style="color:blue;">MARÍA</td>
+</tr>
+
+<tr>
+<td> <img src="Práctica 16(1)/apply_f2.png"></td>
+<td style="color:blue;">DAVID</td>
+</tr><tr>
+<td> <img src="Práctica 16(1)/apply_f2.png"></td>
+<td style="color:blue;">IRENE</td>
+</tr>
+</table>
+
+<p style="color:blue;">16.</p>
+<table border="2px;" height="300px;" width="200px;" style="color:blue;">
+<tr style="height:10%;">
+<th  style="background-color:cyan; text-align
+:left; color:blue">Campo 1</th>
+<th height="10%;" style="background-color:#99FF66; text-align
+:right; color:blue"> Campo 2</th>
+</tr>
+<tr>
+<td style="background-color:orange; text-align:right;vertical-align:top;color:blue;">Arriba</td>
+<td style="background-color:orange; text-align:center;vertical-align:bottom; color:red; background-image:url('Práctica 16(1)/a.jpg')"><strong>Negrita</strong> </td>
+</tr>
+</table>
+
+
+<p style="color:blue;">17.</p>
+<table  height="300px;" width="200px;">
+<tr style="height:10%;">
+<th  style="background-color:cyan; text-align
+:left; color:blue">Campo 1</th>
+<th height="10%;" style="background-color:#99FF66; text-align
+:right; color:blue"> Campo 2</th>
+</tr>
+<tr>
+<td style="background-color:orange; text-align:right;vertical-align:top;color:blue;">Arriba</td>
+<td style="background-color:orange; text-align:center;vertical-align:bottom; color:red; background-image:url('Práctica 16(1)/a.jpg'); background-size:100%;"><strong>Negrita</strong> </td>
+</tr>
+</table>
+
+<p style="color:blue;">18.</p>
+<table  height="300px;" width="200px;" style="border-spacing:0px;">
+<tr style="height:10%;">
+<th  style="background-color:cyan; text-align
+:left; color:blue">Campo 1</th>
+<th height="10%;" style="background-color:#99FF66; text-align
+:right; color:blue"> Campo 2</th>
+</tr>
+<tr>
+<td style="background-color:orange; text-align:right;vertical-align:top;color:blue;">Arriba</td>
+<td style="background-color:orange; text-align:center;vertical-align:bottom; color:red; background-image:url('Práctica 16(1)/a.jpg');background-size:cover;"><strong>Negrita</strong> </td>
+</tr>
+</table>
+
+<p style="color:blue;">19.</p>
+<table  height="300px;" width="200px;" style="border-spacing:30px;">
+<tr style="height:10%;">
+<th  style="background-color:cyan; text-align
+:left; color:blue">Campo1</th>
+<th height="10%;" style="background-color:#99FF66; text-align
+:right; color:blue"> Campo2</th>
+</tr>
+<tr>
+<td style="background-color:orange; text-align:right;vertical-align:top;color:blue;">Arriba</td>
+<td style="background-color:orange; text-align:center;vertical-align:bottom; color:red; background-image:url('Práctica 16(1)/a.jpg');background-size:cover;"><strong>Negrita</strong> </td>
+</tr>
+</table>
+
+
+<p style="color:blue;">20.</p>
+<table  height="300px;" width="200px;" style="border-spacing:30px;">
+<tr style="height:10%;">
+<th  style="background-color:cyan; text-align
+:left; color:blue;border-spacing:30px;padding:15px;">Campo1</th>
+<th  style="background-color:#99FF66; text-align
+:right; color:blue;border-spacing:30px;padding:15px;"> Campo2</th>
+</tr>
+<tr>
+<td style="background-color:orange; text-align:right;vertical-align:top;color:blue;border-spacing:30px; padding:10px;">Arriba</td>
+<td style="background-color:orange;border-spacing:30px; text-align:center;vertical-align:bottom; color:red; background-image:url('Práctica 16(1)/a.jpg');background-attachment:fixed;background-size:cover; padding:10px;"><strong>Negrita</strong> </td>
+</tr>
+</table>
+
+<p style="color:blue;">21.</p>
+
+<table  height="300px;" width="200px;" style="border-spacing:30px;margin:auto;">
+<tr style="height:10%;">
+<th  style="background-color:cyan; text-align
+:left; color:blue;border-spacing:30px;padding:10px;">Campo1</th>
+<th  style="background-color:#99FF66; text-align
+:right; color:blue;border-spacing:30px;padding:10px;"> Campo2</th>
+</tr>
+<tr>
+<td style="background-color:orange; text-align:right;vertical-align:top;color:blue;border-spacing:30px; padding:150px;">Arriba</td>
+<td style="background-color:orange;border-spacing:30px; text-align:center;vertical-align:bottom; color:red; background-image:url('Práctica 16(1)/a.jpg');background-size:cover; padding:150px;"><strong>Negrita</strong> </td>
+</tr>
+</table>
+
+<p style="color:blue;">22. las celdas se expanden en horizontal</p>
+<table border="4px;" style="color:blue;">
+<caption>Tabla a medida</caption>
+<tr>
+<td colspan="2">Celda que ocupa dos columnas</td>
+<td>f1-c3</td>
+</tr>
+<tr>
+<td>f2-c1</td>
+<td>f2-c2</td>
+<td>f2-c3</td>
+</tr>
+<tr>
+<td>f3-c1</td>
+<td>f3-c2</td>
+<td>f3-c3</td>
+</tr>
+</table>
+
+
+<p style="color:blue;">23.las celdas se expanden en vertical</p>
+<table border="4px;" style="color:blue;">
+<caption>Tabla a medida</caption>
+<tr>
+<td rowspan="2">Celda que ocupa dos filas</td>
+<td>f1-c2</td>
+<td>f1-c3</td>
+</tr>
+<tr>
+<td>f2-c2</td>
+<td>f2-c3</td>
+</tr>
+<tr>
+<td>f3-c1</td>
+<td>f3-c2</td>
+<td>f3-c3</td>
+</tr>
+</table>
+
+<p style="color:blue;">24</p>
+<table border="1px;" style="color:blue;height:200px;width:300px;">
+<tr style="background-color:yellow;color:blue;">
+<th>A</th>
+<th>B</td>
+<th>C</td>
+<th>D</td>
+</tr>
+<tr style="background-color:yellow;color:blue;">
+<th>E</td>
+<th>F</td>
+<th>G</td>
+<th>H</td>
+</tr>
+<tr style="background-color:yellow;color:blue;">
+<th>I</td>
+<th>J</td>
+<th>K</td>
+<th>L</td>
+</tr>
+<tr style="background-color:yellow;color:blue;">
+<th>M</td>
+<th>N</td>
+<th>Ñ</td>
+<th>O</td>
+</tr>
+</table>
+
+<p style="color:blue;">25</p>
+<table border="1px;" style="background-color:cyan;height:200px;width:300px;">
+<tr style="background-color:cyan;color:blue;">
+<th>A</th>
+<th>B</td>
+<th>C</td>
+<th>D</td>
+</tr>
+<tr style="background-color:cyan;color:blue;">
+<th>E</td>
+<th rowspan="2" colspan="2">F</td>
+<th>G</td>
+<th>H</td>
+</tr>
+<tr style="background-color:cyan;color:blue;">
+<th>I</td>
+<th>J</td>
+<th>K</td>
+<th>L</td>
+</tr>
+<tr style="background-color:cyan;color:blue;">
+<th>M</td>
+<th>N</td>
+<th>Ñ</td>
+<th>O</td>
+</tr>
+</table>
+
+<p style="color:blue;">26</p>
+<table border="1px;" style="background-color:green;height:200px;width:300px;text-align:center;">
+<tr style="background-color:greeen;color:blue;">
+<td>A</td>
+<td>B</td>
+<td>C</td>
+<td>D</td>
+</tr>
+<tr style=";color:blue;">
+<td>E</td>
+<td colspan="4">F</td>
+<td>G</td>
+<td>H</td>
+</tr>
+<tr style="color:blue;">
+<td>I</td>
+<td>J</td>
+<td>K</td>
+<td>L</td>
+</tr>
+<tr style="color:blue;">
+<td>M</td>
+<td>N</td>
+<td>Ñ</td>
+<td>O</td>
+</tr>
+</table>
+
+
+<p style="color:blue;">27</p>
+<table border="5px;" style="height:200px;width:300px;text-align:center;border-color:red">
+
+<tr style="color:blue;border-color:white;">
+<th style="border-color:blue;">Curso</th>
+<th>Módulo</th>
+<th>Profesor</th>
+</tr>
+
+<tr style="color:blue; border-color:white;">
+<td style="border-color:white;">ASIR1</td>
+<td style="border-color:white;">LSGMI</td>
+<td style="border-color:white;">PGL</td>
+</tr>
+
+<tr style="color:blue; border-color:white;">
+<td style="border-color:white;">ASIR1</td>
+<td style="border-color:white;">GBD</td>
+<td style="border-color:white;">PGL</td>
+</tr>
+</table>
+
+<p style="color:blue;">28</p>
+<table style="border:2px solid green;height:15px;width:25px;text-align:center;border-color:green;padding:50px;border-spacing:1px;">
+
+<tr style="color:blue;">
+<th>Campo1</th>
+<th>Campo2</th>
+<th>Campo3</th>
+</tr>
+
+<tr style="color:blue;">
+<td>Irene</td>
+<td>David</td>
+<td>Nuria</td>
+</tr>
+
+<tr style="color:blue;">
+<td>Diego</td>
+<td>Rosa</td>
+<td>Pedro</td>
+</tr>
+</table>
+
+<p style="color:blue;">29</p>
+<table style="border:2px solid green; height:200px;width:300px;text-align:center;">
+
+<tr style="color:blue;">
+<th style="color:blue;border-bottom:2px;border-bottom-style:solid;border-color-bottom:green;">Campo1</th>
+<th style="color:blue;border-bottom:2px;border-bottom-style:solid;border-color-bottom:green;">Campo2</th>
+<th style="color:blue;border-bottom:2px;border-bottom-style:solid;border-color-bottom:green;">Campo3</th>
+</tr>
+
+<tr style="color:blue">
+<td style="color:blue;border-bottom:2px;border-bottom-style:solid;border-color-bottom:green;">Irene</td>
+<td style="color:blue;border-bottom:2px;border-bottom-style:solid;border-color-bottom:green;">David</td>
+<td style="color:blue;border-bottom:2px;border-bottom-style:solid;border-color-bottom:green;">Nuria</td>
+</tr>
+
+<tr style="color:blue;">
+<td >Diego</td>
+<td >Rosa</td>
+<td >Pedro</td>
+</tr>
+</table>
+
+
+<p style="color:blue;">30</p>
+<table  style="border:3px solid red;20px;height:200px;width:300px;text-align:center;border-collapse:2px;">
+
+<tr >
+<th  style="color:red;border-right:2px;border-right-style:solid;border-color-right:red;">Campo1</th>
+<th style="color:red;border-right:2px;border-right-style:solid;border-color-right:red;">Campo2</th>
+<th style="color:red;border-right:2px;border-right-style:solid;border-color-right:red;">Campo3</th>
+</tr>
+
+<tr style=";color:blue;">
+<td style="color:red;border-right:2px;border-right-style:solid;border-color-right:red;">Irene</td>
+<td style="color:red;border-right:2px;border-right-style:solid;border-color-right:red;">David</td>
+<td style="color:red;border-right:2px;border-right-style:solid;border-color-right:red;">Nuria</td>
+</tr>
+
+<tr style="color:blue;">
+<td style="color:red;border-right:2px;border-right-style:solid;border-color-right:red;">Diego</td>
+<td style="color:red;border-right:2px;border-right-style:solid;border-color-right:red;">Rosa</td>
+<td style="color:red;border-right:2px;border-right-style:solid;border-color-right:red;">Pedro</td>
+</tr>
+</table>
+
+
+<p style="color:blue;">31</p>
+<table style="height:200px;width:300px;text-align:center;">
+
+<tr style="color:blue;">
+<th style="color:blue;border:2px;border-style:solid;border-color:blue;">Campo1</th>
+<th style="color:blue;border:2px;border-style:solid;border-color:blue;">Campo2</th>
+<th style="color:blue;border:2px;border-style:solid;border-color:blue;">Campo3</th>
+</tr>
+
+<tr style=";color:blue;">
+<td style="color:blue;border:2px;border-style:solid;border-color:blue;">Irene</td>
+<td style="color:blue;border:2px;border-style:solid;border-color:blue;">David</td>
+<td style="color:blue;border:2px;border-style:solid;border-color:blue;">Nuria</td>
+</tr>
+
+<tr style="color:blue;">
+<td style="color:blue;border:2px;border-style:solid;border-color:blue;">Diego</td>
+<td style="color:blue;border:2px;border-style:solid;border-color:blue;">Rosa</td>
+<td style="color:blue;border:2px;border-style:solid;border-color:blue;">Pedro</td>
+</tr>
+</table>
+
+
+<p style="color:blue;">32</p>
+<table style="height:200px;width:300px;text-align:center;border-collapse;">
+
+<tr style="color:blue;">
+<th style="color:blue;border:2px;border-style:solid;border-color:blue;">Campo1</th>
+<th style="color:blue;border:2px;border-style:solid;border-color:blue;">Campo2</th>
+<th style="color:blue;border:2px;border-style:solid;border-color:blue;">Campo3</th>
+</tr>
+
+<tr style=";color:blue;">
+<td style="color:blue;border:2px;border-style:solid;border-color:blue;">Irene</td>
+<td style="color:blue;border:2px;border-style:solid;border-color:blue;">David</td>
+<td style="color:blue;border:2px;border-style:solid;border-color:blue;">Nuria</td>
+</tr>
+
+<tr style="color:blue;">
+<td style="color:blue;border:2px;border-style:solid;border-color:blue;">Diego</td>
+<td style="color:blue;border:2px;border-style:solid;border-color:blue;">Rosa</td>
+<td style="color:blue;border:2px;border-style:solid;border-color:blue;">Pedro</td>
+</tr>
+</table>
+
+
+
+
+
+<p style="color:blue;">33</p>
+<table  style="border:5px solid red;20px;height:200px;width:300px;text-align:center;border-collapse;">
+
+<tr style="color:blue;">
+<th style="color:blue;border:2px;border-right-style:solid;border-bottom-style:solid;border-color:blue;">Campo1</th>
+<th style="color:blue;border:2px;border-right-style:solid;border-bottom-style:solid;border-color:blue;">Campo2</th>
+<th style="color:blue;border:2px;border-right-style:solid;border-bottom-style:solid;border-color:blue;">Campo3</th>
+</tr>
+
+<tr style=";color:blue;">
+<td style="color:blue;border:2px;border-right-style:solid;border-bottom-style:solid;border-color:blue;">Irene</td>
+<td style="color:blue;border:2px;border-right-style:solid;border-bottom-style:solid;border-color:blue;">David</td>
+<td style="color:blue;border:2px;border-right-style:solid;border-bottom-style:solid;border-color:blue;">Nuria</td>
+</tr>
+
+<tr style="color:blue;">
+<td style="color:blue;border:2px;border-right-style:solid;border-bottom-style:solid;border-color:blue;">Diego</td>
+<td style="color:blue;border:2px;border-right-style:solid;border-bottom-style:solid;border-color:blue;">Rosa</td>
+<td style="color:blue;border:2px;border-right-style:solid;border-bottom-style:solid;border-color:blue;">Pedro</td>
+</tr>
+</table>
+
+<p style="color:blue;">34</p>
+<table  style="border:5px solid red;20px;height:200px;width:300px;text-align:center;border-collapse;border-top-color:blue;border-bottom-color:orange;border-right-color:transparent;border-left-color:transparent;">
+
+<tr style="color:blue;">
+<th style="color:blue;border:2px;border-right-style:solid;border-bottom-style:solid;border-color:blue;">Campo1</th>
+<th style="color:blue;border:2px;border-right-style:solid;border-bottom-style:solid;border-color:blue;">Campo2</th>
+<th style="color:blue;border:2px;border-right-style:solid;border-bottom-style:solid;border-color:blue;">Campo3</th>
+</tr>
+
+<tr style=";color:blue;">
+<td style="color:blue;border:2px;border-right-style:solid;border-bottom-style:solid;border-color:blue;">Irene</td>
+<td style="color:blue;border:2px;border-right-style:solid;border-bottom-style:solid;border-color:blue;">David</td>
+<td style="color:blue;border:2px;border-right-style:solid;border-bottom-style:solid;border-color:blue;">Nuria</td>
+</tr>
+
+<tr style="color:blue;">
+<td style="color:blue;border:2px;border-right-style:solid;border-bottom-style:solid;border-color:blue;">Diego</td>
+<td style="color:blue;border:2px;border-right-style:solid;border-bottom-style:solid;border-color:blue;">Rosa</td>
+<td style="color:blue;border:2px;border-right-style:solid;border-bottom-style:solid;border-color:blue;">Pedro</td>
+</tr>
+</table>
+
+
+
+<p style="color:blue;">35</p>
+<table  style="border:5px solid navy;20px;height:200px;width:300px;text-align:center;border-collapse;border-top-color:blue;border-bottom-color:orange;border-right-color:navy;border-left-color:navy;border-top-color:transparent;border-bottom-color:transparent;">
+
+<tr style="color:blue;">
+<th style="color:blue;border:2px;border-right-style:solid;border-bottom-style:solid;border-color:blue;border-top-color:blue;border-top-style:solid;">Campo1</th>
+<th style="color:blue;border:2px;border-right-style:solid;border-bottom-style:solid;border-color:blue;border-top-color:blue;border-top-style:solid;">Campo2</th>
+<th style="color:blue;border:2px;border-right-style:solid;border-bottom-style:solid;border-color:blue;border-top-color:blue;border-top-style:solid;">Campo3</th>
+</tr>
+
+<tr style=";color:blue;">
+<td style="color:blue;border:2px;border-right-style:solid;border-bottom-style:solid;border-color:blue;">Irene</td>
+<td style="color:blue;border:2px;border-right-style:solid;border-bottom-style:solid;border-color:blue;">David</td>
+<td style="color:blue;border:2px;border-right-style:solid;border-bottom-style:solid;border-color:blue;">Nuria</td>
+</tr>
+
+<tr style="color:blue;">
+<td style="color:blue;border:2px;border-right-style:solid;border-bottom-style:solid;border-color:blue;">Diego</td>
+<td style="color:blue;border:2px;border-right-style:solid;border-bottom-style:solid;border-color:blue;">Rosa</td>
+<td style="color:blue;border:2px;border-right-style:solid;border-bottom-style:solid;border-color:blue;">Pedro</td>
+</tr>
+</table>
+
+
+<p style="color:blue;">36</p>
+<table  style="border:5px solid navy;20px;height:200px;width:300px;text-align:center;border-collapse;border-top-color:blue;border-bottom-color:orange;border-right-color:transparent;border-left-color:red;border-top-color:transparent;border-bottom-color:transparent;">
+
+<tr style="color:blue;">
+<th style="color:blue;border:2px;border-right-style:solid;border-bottom-style:solid;border-color:blue;border-top-color:blue;border-top-style:solid;">Campo1</th>
+<th style="color:blue;border:2px;border-right-style:solid;border-bottom-style:solid;border-color:blue;border-top-color:blue;border-top-style:solid;">Campo2</th>
+<th style="color:blue;border:2px;border-right-style:solid;border-bottom-style:solid;border-color:blue;border-top-color:blue;border-top-style:solid;">Campo3</th>
+</tr>
+
+<tr style=";color:blue;">
+<td style="color:blue;border:2px;border-right-style:solid;border-bottom-style:solid;border-color:blue;">Irene</td>
+<td style="color:blue;border:2px;border-right-style:solid;border-bottom-style:solid;border-color:blue;">David</td>
+<td style="color:blue;border:2px;border-right-style:solid;border-bottom-style:solid;border-color:blue;">Nuria</td>
+</tr>
+
+<tr style="color:blue;">
+<td style="color:blue;border:2px;border-right-style:solid;border-bottom-style:solid;border-color:blue;">Diego</td>
+<td style="color:blue;border:2px;border-right-style:solid;border-bottom-style:solid;border-color:blue;">Rosa</td>
+<td style="color:blue;border:2px;border-right-style:solid;border-bottom-style:solid;border-color:blue;">Pedro</td>
+</tr>
+</table>
+
+
+<p style="color:blue;">37</p>
+<table  style="border:5px solid navy;20px;height:200px;width:300px;text-align:center;border-collapse;border-top-color:blue;border-bottom-color:orange;border-right-color:green;border-left-color:transparent;border-top-color:transparent;border-bottom-color:transparent;">
+
+<tr style="color:blue;">
+<th style="color:blue;border:2px;border-right-style:solid;border-bottom-style:solid;border-color:blue;border-top-color:blue;border-top-style:solid;border-left-color:blue;border-left-style:solid;">Campo1</th>
+<th style="color:blue;border:2px;border-right-style:solid;border-bottom-style:solid;border-color:blue;border-top-color:blue;border-top-style:solid;border-left-color:blue;border-left-style:solid;">Campo2</th>
+<th style="color:blue;border:2px;border-right-style:solid;border-bottom-style:solid;border-color:blue;border-top-color:blue;border-top-style:solid;border-left-color:blue;border-left-style:solid;">Campo3</th>
+</tr>
+
+<tr style=";color:blue;">
+<td style="color:blue;border:2px;border-right-style:solid;border-bottom-style:solid;border-color:blue;border-left-color:blue;border-left-style:solid;">Irene</td>
+<td style="color:blue;border:2px;border-right-style:solid;border-bottom-style:solid;border-color:blue;border-left-color:blue;border-left-style:solid;">David</td>
+<td style="color:blue;border:2px;border-right-style:solid;border-bottom-style:solid;border-color:blue;border-left-color:blue;border-left-style:solid;">Nuria</td>
+</tr>
+
+<tr style="color:blue;">
+<td style="color:blue;border:2px;border-right-style:solid;border-bottom-style:solid;border-color:blue;border-left-color:blue;border-left-style:solid;">Diego</td>
+<td style="color:blue;border:2px;border-right-style:solid;border-bottom-style:solid;border-color:blue;border-left-color:blue;border-left-style:solid;">Rosa</td>
+<td style="color:blue;border:2px;border-right-style:solid;border-bottom-style:solid;border-color:blue;border-left-color:blue;border-left-style:solid;border-left-style:solid;">Pedro</td>
+</tr>
+</table>
+
+
+<p style="color:blue;">38</p>
+<table  style="border:5px solid navy;20px;height:200px;width:300px;text-align:center;border-collapse;border-top-color:blue;border-bottom-color:orange;border-right-color:navy;border-left-color:navy;border-top-color:transparent;border-bottom-color:transparent;">
+
+<tr style="background-color:red;color:white;">
+<th >Campo1</th>
+<th >Campo2</th>
+<th >Campo3</th>
+</tr>
+
+<tr style="background-color:green;color:white;">
+<td >Irene</td>
+<td >David</td>
+<td >Nuria</td>
+</tr>
+
+<tr style="background-color:blue;color:white;">
+<td>Diego</td>
+<td >Rosa</td>
+<td >Pedro</td>
+</tr>
+</table>
+
+
+<p style="color:blue;">39</p>
+<table border="2px;" style="color:green;">
+
+<tr>
+<td style="color:blue;">Celda de la tabla principal</td>
+</tr>
+<table border="2px;" style="color:green;">
+
+</table>
+
+
+
+
+</table>
+
+
+
+
+</body>
+</html>
